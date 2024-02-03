@@ -1,0 +1,14 @@
+-Spark is 100x faster than hadoop map reduce in memory, and 10x faster on disk
+-Hadoop uses map-reduce to crunch big dataset.
+-It is very rigid model, which may not be suited for al requirements.
+-If complex req. then we have to chain multiple map-reduce, and due to its design after one map reduce the data has to be
+ written in  a disk and the reloaded in next map reduce
+
+-Driver node builds execution plan
+-Driver node separates the data which is partitioned to worker nodes
+-Driver then send functions to worker nodes to execute it to their data
+-Function executed against a partition is called a task
+
+-RDD -> Resilient Distributed Dataset
+-While writing code we may use rdd multiple times, but it is only at the action time when they are really physically
+ used, elsewhere we are just building the building blocks for the action
