@@ -12,3 +12,5 @@
 -RDD -> Resilient Distributed Dataset
 -While writing code we may use rdd multiple times, but it is only at the action time when they are really physically
  used, elsewhere we are just building the building blocks for the action
+-Execution plan is also known as DAG(Directed acyclic graph)
+
