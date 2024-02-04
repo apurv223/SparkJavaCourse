@@ -14,3 +14,4 @@
  used, elsewhere we are just building the building blocks for the action
 -Execution plan is also known as DAG(Directed acyclic graph)
 
+- an RDD is always immutable, once created it cannot be changed
